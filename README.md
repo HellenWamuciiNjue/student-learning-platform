@@ -153,6 +153,15 @@ Score (e.g. 7/10), percentage, custom encouraging message based on performance b
 #### 7. Navigation 
 It should be consistent: breadcrumb (Home > Subject > Topic > Notes/Quiz), clear back buttons, mobile-friendly.
 
+### What Users Expect
+- Simple, distraction-free interface (students aged ~10–11).
+- Notes that are short, clear, and exam-relevant.
+- Quizzes that feel fair and give useful feedback, not just a score.
+- Ability to revise notes again after a quiz.
+- Progress that feels rewarding.
+- Works offline-ish (once loaded) and on low-end phones/tablets.
+- Local language support where needed (Kiswahili, Insha).
+
 ## ❓ 6. Frequently Asked Engineering Questions (FAQ)
 
 #### Q: Can I push code directly onto the `main` branch?

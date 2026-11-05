@@ -8,8 +8,9 @@ Welcome to the central repository for the Student Learning and Revision Platform
 ---
 
 ## 📅 Hard Milestone Deadline
-*   **Final Integration & Testing Cutoff:** **November 18, 2026**
-*   All feature branches must be submitted via Pull Requests by **November 15, 2026**, to allow for proper integration code reviews and debugging.
+*   **Final Integration & Internal Review Cutoff:** **November 10, 2026 at 6:00 PM**
+*   **Team Progress Meeting:** **November 10, 2026 (7pm)**
+*   All individual feature branches must be submitted via Pull Requests by 6:00 PM to freeze the code for our review and discussion.
 
 ---
 

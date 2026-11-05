@@ -162,6 +162,17 @@ It should be consistent: breadcrumb (Home > Subject > Topic > Notes/Quiz), clear
 - Works offline-ish (once loaded) and on low-end phones/tablets.
 - Local language support where needed (Kiswahili, Insha).
 
+### APP MVP (Minimum Viable Product)
+This is how App must look like (Bear minimum):
+- User accounts Login/Signup
+- Homepage + navigation
+- At least 4–6 subjects fully populated with 3–5 topics each
+- Clean notes pages for those topics
+- Working quiz engine (MCQs + scoring + basic feedback)
+- Results page with score + simple message + list of wrong answers
+- Responsive CSS that works on phone and desktop
+- README + basic documentation
+
 ## ❓ 6. Frequently Asked Engineering Questions (FAQ)
 
 #### Q: Can I push code directly onto the `main` branch?

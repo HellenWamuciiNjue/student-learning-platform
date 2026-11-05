@@ -121,7 +121,39 @@ git push origin feature-your-role
 
 ---
 
-## ❓ 5. Frequently Asked Engineering Questions (FAQ)
+## 5. Guiding Notes: How the App Will Work, User Expectations, Selling Points & MVP
+We will start with Grade 5 content for our MVP (These are the student who will do an exam next year to head to Juniour High School hence our priority). We will integrate other classes with time so build with that in mind.
+
+### How the App Works (User Flow)
+
+#### 1. Landing / Homepage
+Student selects Grade 5 (or later other grades).
+
+#### 2. Subjects Page
+Grid or list of subjects (Mathematics, English, Kiswahili, CRE, Social Studies, Creative Arts, Music, Physical & Health Education, Home Science, Composition, Insha, Science).
+
+#### 3. Topics Page (per subject)
+List of topics with short descriptions and progress indicators (e.g. “3/8 topics completed”).
+
+#### 4. Notes Page
+Clean, readable revision notes for the selected topic.
+- Structured headings, bullet points, key terms highlighted, simple diagrams/descriptions where needed.
+- “Mark as read” or progress tracking.
+- Optional “Related Quiz” button at the bottom.
+
+#### 5. Quiz Interface
+Interactive multiple-choice / true-false / short matching questions drawn from the topic’s question bank.
+- One question at a time or paginated.
+- Immediate feedback after each answer or at the end (configurable).
+- Automatic scoring.
+
+#### 6. Results / Feedback Page
+Score (e.g. 7/10), percentage, custom encouraging message based on performance bands, list of incorrect answers with correct explanations, option to retry or go to next topic.
+
+#### 7. Navigation 
+It should be consistent: breadcrumb (Home > Subject > Topic > Notes/Quiz), clear back buttons, mobile-friendly.
+
+## ❓ 6. Frequently Asked Engineering Questions (FAQ)
 
 #### Q: Can I push code directly onto the `main` branch?
 **No.** Direct pushes to the `main` branch are restricted. If you bypass this or run destructive push overrides, you run the risk of breaking our baseline tracking files. All updates must come in via Pull Requests.

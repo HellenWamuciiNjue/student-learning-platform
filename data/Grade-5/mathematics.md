@@ -199,3 +199,53 @@ Forgetting to add the carried-over number.
   {"id": "ad10", "question": "9,876 + 5,432 = ?", "options": ["15,308", "14,308", "15,208", "15,318"], "correctAnswer": 0, "explanation": "Correct sum is 15,308."}
 ]
 ```
+
+---
+
+## Topic 5: Subtraction of Whole Numbers
+### Learning Objectives
+
+- Subtract whole numbers with and without regrouping (borrowing)
+- Use column subtraction correctly
+- Check subtraction by addition
+
+### Key Concepts
+* Align numbers by place value. Subtract from right to left.
+
+* When the top digit is smaller than the bottom digit, regroup (borrow) from the next higher place.
+
+**Example**
+
+  8,000
+– 3,456
+_______
+  4,544
+
+### Checking
+Add the difference to the smaller number; you should get the larger number.
+
+### Summary
+Regroup carefully and always check your answer by adding.
+
+### Common Mistake
+Forgetting to reduce the digit from which you borrowed.
+
+### Quiz Questions
+
+``` json
+[
+  {"id": "sb1", "question": "What is 7,000 – 2,345?", "options": ["4,655", "4,755", "5,655", "4,645"], "correctAnswer": 0, "explanation": "7,000 – 2,345 = 4,655."},
+  {"id": "sb2", "question": "15,000 – 8,765 = ?", "options": ["6,235", "6,335", "7,235", "6,245"], "correctAnswer": 0, "explanation": "Correct difference is 6,235."},
+  {"id": "sb3", "question": "True or False: Subtraction is checked by adding the answer to the smaller number.", "options": ["True", "False"], "correctAnswer": 0, "explanation": "Yes, that is the correct checking method."},
+  {"id": "sb4", "question": "9,876 – 5,432 = ?", "options": ["4,444", "4,434", "4,544", "3,444"], "correctAnswer": 0, "explanation": "9,876 – 5,432 = 4,444."},
+  {"id": "sb5", "question": "What is 50,000 – 27,890?", "options": ["22,110", "22,210", "23,110", "21,110"], "correctAnswer": 0, "explanation": "50,000 – 27,890 = 22,110."},
+  {"id": "sb6", "question": "6,543 – 2,789 = ?", "options": ["3,754", "3,854", "3,744", "4,754"], "correctAnswer": 0, "explanation": "Correct answer is 3,754."},
+  {"id": "sb7", "question": "True or False: 8,000 – 1 = 7,999", "options": ["True", "False"], "correctAnswer": 0, "explanation": "Correct."},
+  {"id": "sb8", "question": "100,000 – 45,678 = ?", "options": ["54,322", "55,322", "54,222", "53,322"], "correctAnswer": 0, "explanation": "Correct difference."},
+  {"id": "sb9", "question": "Subtract: 67,890 – 23,456", "options": ["44,434", "44,344", "45,434", "44,424"], "correctAnswer": 0, "explanation": "67,890 – 23,456 = 44,434."},
+  {"id": "sb10", "question": "What is 4,000 – 1,999?", "options": ["2,001", "2,101", "1,001", "3,001"], "correctAnswer": 0, "explanation": "4,000 – 1,999 = 2,001."}
+]
+```
+
+---
+

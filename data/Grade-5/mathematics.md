@@ -249,3 +249,51 @@ Forgetting to reduce the digit from which you borrowed.
 
 ---
 
+## Topic 6: Multiplication of Whole Numbers
+
+### Learning Objectives
+
+- Multiply numbers by 1-digit and 2-digit multipliers
+- Use the column method
+- Understand the effect of multiplying by 10, 100 and 1,000
+
+### Key Concepts
+* Multiplication is repeated addition.
+
+* When multiplying by 10, add one zero; by 100, add two zeros; by 1,000, add three zeros.
+
+**Example (2-digit multiplier)**
+
+   346
+×   27
+______
+  2422   (346 × 7)
+ 6920    (346 × 20)
+______
+ 9342
+
+**Summary**
+Break the multiplier into ones and tens, multiply separately, then add the partial products.
+
+**Common Mistake**
+Misplacing the zeros when multiplying by tens.
+
+**Quiz Questions**
+
+``` json
+[
+  {"id": "ml1", "question": "What is 45 × 10?", "options": ["450", "45", "4,500", "405"], "correctAnswer": 0, "explanation": "Multiplying by 10 adds one zero."},
+  {"id": "ml2", "question": "236 × 4 = ?", "options": ["944", "934", "954", "844"], "correctAnswer": 0, "explanation": "236 × 4 = 944."},
+  {"id": "ml3", "question": "True or False: 67 × 100 = 6,700", "options": ["True", "False"], "correctAnswer": 0, "explanation": "Correct – two zeros added."},
+  {"id": "ml4", "question": "What is 128 × 5?", "options": ["640", "630", "650", "540"], "correctAnswer": 0, "explanation": "128 × 5 = 640."},
+  {"id": "ml5", "question": "35 × 20 = ?", "options": ["700", "70", "7,000", "350"], "correctAnswer": 0, "explanation": "35 × 20 = 700."},
+  {"id": "ml6", "question": "146 × 3 = ?", "options": ["438", "428", "448", "338"], "correctAnswer": 0, "explanation": "Correct product is 438."},
+  {"id": "ml7", "question": "True or False: Multiplying by 1,000 adds three zeros.", "options": ["True", "False"], "correctAnswer": 0, "explanation": "Yes."},
+  {"id": "ml8", "question": "72 × 15 = ?", "options": ["1,080", "1,070", "1,180", "980"], "correctAnswer": 0, "explanation": "72 × 15 = 1,080."},
+  {"id": "ml9", "question": "What is 200 × 40?", "options": ["8,000", "800", "80,000", "2,400"], "correctAnswer": 0, "explanation": "200 × 40 = 8,000."},
+  {"id": "ml10", "question": "99 × 9 = ?", "options": ["891", "891", "900", "801"], "correctAnswer": 0, "explanation": "99 × 9 = 891."}
+]
+```
+
+---
+

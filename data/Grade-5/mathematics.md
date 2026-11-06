@@ -78,9 +78,9 @@ To compare two numbers, start from the highest place value (left side).
 **Descending order** = from largest to smallest
 
 **Example**
-*Numbers: 3,245 · 3,425 · 3,245 · 3,542
-*Ascending: 3,245 · 3,245 · 3,425 · 3,542
-*Descending: 3,542 · 3,425 · 3,245 · 3,245
+* Numbers: 3,245 · 3,425 · 3,245 · 3,542
+* Ascending: 3,245 · 3,245 · 3,425 · 3,542
+* Descending: 3,542 · 3,425 · 3,245 · 3,245
 
 ### Summary
 Always compare digit by digit from the left. The first different digit decides which number is larger.
@@ -106,3 +106,96 @@ Looking only at the number of digits or the last digits instead of starting from
 ```
 
 ## Topic 3: Rounding Off Numbers
+### Learning Objectives
+
+- Round numbers to the nearest ten, hundred and thousand
+- Apply the rounding rule correctly
+- Understand when to round up or stay the same
+
+### Key Concepts
+### Rounding Rule
+Look at the digit immediately to the right of the place you are rounding to:
+
+- If it is 0, 1, 2, 3 or 4 → round down (keep the digit the same)
+- If it is 5, 6, 7, 8 or 9 → round up (add 1 to the digit)
+
+**Examples**
+Round 3,647:
+
+- To nearest ten → 3,650
+- To nearest hundred → 3,600
+- To nearest thousand → 4,000
+
+Round 12,450 to nearest hundred → 12,500 (because the tens digit is 5).
+
+### Summary
+Rounding makes numbers easier to work with while staying close to the original value. Always check the next digit.
+
+### Common Mistake
+Forgetting to change all digits after the rounding place to zero.
+
+### Quiz Questions
+
+```json
+[
+  {"id": "rd1", "question": "Round 4,762 to the nearest ten.", "options": ["4,760", "4,770", "4,700", "4,800"], "correctAnswer": 0, "explanation": "The ones digit is 2 (less than 5), so it rounds down to 4,760."},
+  {"id": "rd2", "question": "Round 8,350 to the nearest hundred.", "options": ["8,300", "8,400", "8,000", "9,000"], "correctAnswer": 1, "explanation": "The tens digit is 5, so we round up to 8,400."},
+  {"id": "rd3", "question": "True or False: 6,499 rounded to the nearest thousand is 6,000.", "options": ["True", "False"], "correctAnswer": 0, "explanation": "The hundreds digit is 4, so it rounds down to 6,000."},
+  {"id": "rd4", "question": "What is 23,678 rounded to the nearest thousand?", "options": ["23,000", "24,000", "23,700", "23,680"], "correctAnswer": 1, "explanation": "The hundreds digit is 6 ≥ 5, so round up to 24,000."},
+  {"id": "rd5", "question": "Round 15,500 to the nearest thousand.", "options": ["15,000", "16,000", "15,500", "20,000"], "correctAnswer": 1, "explanation": "Hundreds digit is 5, so round up to 16,000."},
+  {"id": "rd6", "question": "7,841 rounded to the nearest ten is:", "options": ["7,840", "7,850", "7,800", "7,900"], "correctAnswer": 0, "explanation": "Ones digit is 1 < 5 → 7,840."},
+  {"id": "rd7", "question": "True or False: When rounding to the nearest hundred, we look at the tens digit.", "options": ["True", "False"], "correctAnswer": 0, "explanation": "Correct."},
+  {"id": "rd8", "question": "Round 99,950 to the nearest hundred.", "options": ["99,900", "100,000", "99,000", "100,950"], "correctAnswer": 1, "explanation": "Tens digit is 5 → round up, which carries over to 100,000."},
+  {"id": "rd9", "question": "What is 4,449 rounded to the nearest hundred?", "options": ["4,400", "4,500", "4,000", "4,450"], "correctAnswer": 0, "explanation": "Tens digit is 4 < 5 → 4,400."},
+  {"id": "rd10", "question": "Round 67,251 to the nearest thousand.", "options": ["67,000", "68,000", "67,300", "67,200"], "correctAnswer": 0, "explanation": "Hundreds digit is 2 < 5 → 67,000."}
+]
+```
+---
+
+## Topic 4: Addition of Whole Numbers
+### Learning Objectives
+
+- Add whole numbers up to 6 digits with and without regrouping
+- Use column addition correctly
+- Estimate sums by rounding
+
+### Key Concepts
+Write numbers in columns according to place value (ones under ones, tens under tens, etc.).
+
+* Add from right to left. When the sum of a column is 10 or more, regroup (carry over) to the next column.
+
+**Example**
+
+  45,678
++ 32,945
+_______
+  78,623
+
+### Estimation
+Round each number then add to check if the answer is reasonable.
+* 45,678 ≈ 46,000
+* 32,945 ≈ 33,000
+* Estimated sum ≈ 79,000 (close to 78,623).
+
+### Summary
+Always align place values, add column by column, and regroup when necessary. Estimation helps catch mistakes.
+
+### Common Mistake
+Forgetting to add the carried-over number.
+
+### Quiz Questions
+
+``` json
+[
+  {"id": "ad1", "question": "What is 3,456 + 2,789?", "options": ["6,245", "6,245", "6,145", "5,245"], "correctAnswer": 0, "explanation": "3,456 + 2,789 = 6,245."},
+  {"id": "ad2", "question": "Add: 15,678 + 23,456", "options": ["39,134", "38,134", "39,124", "39,234"], "correctAnswer": 0, "explanation": "Correct sum is 39,134."},
+  {"id": "ad3", "question": "True or False: When adding, we start from the left (highest place value).", "options": ["True", "False"], "correctAnswer": 1, "explanation": "We always start from the right (ones place)."},
+  {"id": "ad4", "question": "45,000 + 27,500 = ?", "options": ["72,500", "71,500", "72,000", "73,500"], "correctAnswer": 0, "explanation": "45,000 + 27,500 = 72,500."},
+  {"id": "ad5", "question": "What is the estimated sum of 6,782 + 3,219 by rounding to the nearest thousand?", "options": ["10,000", "9,000", "11,000", "8,000"], "correctAnswer": 0, "explanation": "7,000 + 3,000 = 10,000."},
+  {"id": "ad6", "question": "8,999 + 1 = ?", "options": ["9,000", "8,000", "9,999", "9,001"], "correctAnswer": 0, "explanation": "8,999 + 1 = 9,000."},
+  {"id": "ad7", "question": "True or False: 67,890 + 12,345 = 80,235", "options": ["True", "False"], "correctAnswer": 0, "explanation": "Correct."},
+  {"id": "ad8", "question": "Add 124,567 + 235,678", "options": ["360,245", "359,245", "360,145", "361,245"], "correctAnswer": 0, "explanation": "The sum is 360,245."},
+  {"id": "ad9", "question": "What must be added to 45,678 to get 100,000?", "options": ["54,322", "55,322", "54,222", "53,322"], "correctAnswer": 0, "explanation": "100,000 – 45,678 = 54,322."},
+  {"id": "ad10", "question": "9,876 + 5,432 = ?", "options": ["15,308", "14,308", "15,208", "15,318"], "correctAnswer": 0, "explanation": "Correct sum is 15,308."}
+]
+```

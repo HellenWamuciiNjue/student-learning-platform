@@ -51,3 +51,58 @@ Confusing the place (position) with the actual value of the digit.
   {"id": "pv10", "question": "What is the value of 3 in 8,300,000?", "options": ["3", "300", "3,000", "300,000"], "correctAnswer": 3, "explanation": "3 is in the hundred thousands place."}
 ]
 ```
+
+## Topic 2: Ordering and Comparing Whole Numbers
+
+### Learning Objectives
+
+- Compare whole numbers using greater than (>), less than (<) and equal to (=)
+- Arrange numbers in ascending and descending order
+- Use place value to compare numbers
+
+### Key Concepts
+To compare two numbers, start from the highest place value (left side).
+
+**Example:** Compare 45,678 and 45,768
+
+- Both have 4 ten thousands and 5 thousands
+- Next digit: 6 hundreds vs 7 hundreds → 45,678 < 45,768
+
+### Symbols
+
+- means greater than
+- < means less than
+- = means equal to
+
+**Ascending order** = from smallest to largest
+**Descending order** = from largest to smallest
+
+**Example**
+*Numbers: 3,245 · 3,425 · 3,245 · 3,542
+*Ascending: 3,245 · 3,245 · 3,425 · 3,542
+*Descending: 3,542 · 3,425 · 3,245 · 3,245
+
+### Summary
+Always compare digit by digit from the left. The first different digit decides which number is larger.
+
+### Common Mistake
+Looking only at the number of digits or the last digits instead of starting from the highest place value.
+
+### Quiz Questions
+
+```json
+[
+  {"id": "oc1", "question": "Which symbol correctly compares 67,890 and 67,809?", "options": [">", "<", "=", "None"], "correctAnswer": 0, "explanation": "67,890 is greater than 67,809."},
+  {"id": "oc2", "question": "Arrange in ascending order: 4,562 · 4,652 · 4,526", "options": ["4,526 · 4,562 · 4,652", "4,652 · 4,562 · 4,526", "4,562 · 4,526 · 4,652", "4,526 · 4,652 · 4,562"], "correctAnswer": 0, "explanation": "Smallest to largest is 4,526 · 4,562 · 4,652."},
+  {"id": "oc3", "question": "True or False: 99,999 < 100,000", "options": ["True", "False"], "correctAnswer": 0, "explanation": "99,999 is less than 100,000."},
+  {"id": "oc4", "question": "Which number is the greatest? 56,789 · 56,798 · 56,879", "options": ["56,789", "56,798", "56,879", "They are equal"], "correctAnswer": 2, "explanation": "56,879 has the largest hundreds digit after equal higher places."},
+  {"id": "oc5", "question": "What is the correct descending order of 12,345 · 12,435 · 12,354?", "options": ["12,435 · 12,354 · 12,345", "12,345 · 12,354 · 12,435", "12,354 · 12,435 · 12,345", "12,435 · 12,345 · 12,354"], "correctAnswer": 0, "explanation": "Largest to smallest is 12,435 · 12,354 · 12,345."},
+  {"id": "oc6", "question": "Compare 80,000 and 79,999 using the correct symbol.", "options": ["80,000 < 79,999", "80,000 > 79,999", "80,000 = 79,999", "Cannot compare"], "correctAnswer": 1, "explanation": "80,000 is greater."},
+  {"id": "oc7", "question": "True or False: When two numbers have the same digits in higher places, we look at the next lower place to compare.", "options": ["True", "False"], "correctAnswer": 0, "explanation": "Correct method."},
+  {"id": "oc8", "question": "Which number is the smallest? 234,567 · 243,567 · 234,657", "options": ["234,567", "243,567", "234,657", "All equal"], "correctAnswer": 0, "explanation": "234,567 is the smallest."},
+  {"id": "oc9", "question": "5,678 ___ 5,687 (fill the correct symbol)", "options": [">", "<", "=", "None"], "correctAnswer": 1, "explanation": "5,678 is less than 5,687."},
+  {"id": "oc10", "question": "Arrange 9,876 · 9,867 · 9,786 in ascending order.", "options": ["9,786 · 9,867 · 9,876", "9,876 · 9,867 · 9,786", "9,867 · 9,786 · 9,876", "9,786 · 9,876 · 9,867"], "correctAnswer": 0, "explanation": "Correct ascending order."}
+]
+```
+
+## Topic 3: Rounding Off Numbers

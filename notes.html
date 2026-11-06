@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revision Notes - Human Resource Management | Student Learning Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Stephen Githaiga Muriu - Notes Developer: Print + Scroll-to-topic */
+    html { scroll-behavior: smooth; }
+    .notes-layout { display: grid; grid-template-columns: 290px 1fr; gap: 20px; align-items: start; }
+    .topic-nav { position: sticky; top: 20px; }
+    .topic-nav a { display: block; padding: 9px 10px; text-decoration: none; color: #333; border-left: 3px solid #ddd; margin-bottom: 5px; font-size: 14px; }
+    .topic-nav a:hover { border-left-color: #007bff; background: #f0f7ff; font-weight: bold; }
+    .search-box { width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 6px; }
+    .key-point { background: #fff3cd; padding: 12px; border-left: 4px solid orange; margin: 12px 0; }
+    .first-class { background: #e8f5e9; padding: 12px; border-left: 4px solid #2e7d32; margin: 12px 0; }
+    .theory-box { background: #e3f2fd; padding: 12px; border-radius: 6px; margin: 10px 0; }
+    .exam-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    .exam-table th, .exam-table td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 14px; }
+    .exam-table th { background: #f2f2f2; }
+    @media (max-width: 768px) { .notes-layout { grid-template-columns: 1fr; } .topic-nav { position: static; } }
+    @media print {
+      .nav-bar, .no-print, .topic-nav, .btn { display: none !important; }
+      .notes-layout { display: block; }
+      .card { border: 1px solid #000; break-inside: avoid; margin-bottom: 15px; }
+      body { font-size: 12pt; color: #000; }
+    }
+  </style>
+</head>
+<body>
+<div class="app-container">
+
+  <!-- MANDATORY NAVBAR -->
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-brand">📚 LearnRevise</a>
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="subjects.html" class="nav-item">Subjects</a>
+    <a href="notes.html" class="nav-item">Notes</a>
+    <a href="quizzes.html" class="nav-item">Quizzes</a>
+  </nav>
+
+  <header class="card">
+    <div class="card-header">
+      <h1>HR Degree Revision Notes</h1>
+      <p>Human Resource Management • BBA / BCom HR Option • First Class Target: 70%+</p>
+      <p><b>How to score First Class:</b> Define → Explain with Theory → Apply with Kenyan Example → Critically Evaluate → Conclude + Recommend.</p>
+    </div>
+    <div class="card-body">
+      <input type="search" id="notesSearch" class="search-box no-print" placeholder="Search HR notes... e.g. Maslow, Recruitment, Employment Act" oninput="filterNotes()">
+      <label class="no-print">Filter by Unit:
+        <select id="subjectFilter" onchange="filterNotes()">
+          <option value="All">All HR Units</option>
+          <option value="HRM">Principles of HRM</option>
+          <option value="OB">Organisational Behaviour</option>
+          <option value="Law">Employment Law</option>
+          <option value="Recruitment">Recruitment & Selection</option>
+          <option value="Performance">Performance Management</option>
+          <option value="Training">Training & Development</option>
+          <option value="Compensation">Compensation & Reward</option>
+          <option value="Strategic">Strategic HRM & Analytics</option>
+        </select>
+      </label>
+      <button class="btn btn-secondary no-print" onclick="window.print()">🖨️ Print Notes</button>
+    </div>
+  </header>
+
+  <div class="notes-layout">
+    <!-- SCROLL-TO-TOPIC -->
+    <aside class="card topic-nav no-print">
+      <div class="card-header"><h3>Jump to Topic</h3></div>
+      <div class="card-body">
+        <a href="#note-hrm-intro">1. Introduction to HRM</a>
+        <a href="#note-ob-motivation">2. Motivation Theories</a>
+        <a href="#note-law">3. Employment Law in Kenya</a>
+        <a href="#note-recruitment">4. Recruitment & Selection</a>
+        <a href="#note-performance">5. Performance Management</a>
+        <a href="#note-training">6. Training & Development</a>
+        <a href="#note-compensation">7. Compensation & Reward</a>
+        <a href="#note-strategic">8. Strategic HRM & HR Analytics</a>
+      </div>
+    </aside>
+
+    <main id="notesContainer">
+
+      <!-- 1 -->
+      <section class="card note-item" id="note-hrm-intro" data-subject="HRM" data-keywords="hrm human resource management functions">
+        <div class="card-header"><h2>1. Principles of Human Resource Management</h2><small>Year 1 • Core Unit • HRM</small></div>
+        <div class="card-body">
+          <h4>Definition (Use this in exams)</h4>
+          <p><b>HRM</b> is the strategic and coherent approach to the management of an organisation's most valued assets - the people - who individually and collectively contribute to the achievement of organisational objectives. <i>(Armstrong, 2020)</i></p>
+          <h4>Key Functions of HRM</h4>
+          <table class="exam-table"><tr><th>Function</th><th>What it means</th><th>Kenyan Example</th></tr>
+          <tr><td>Human Resource Planning</td><td>Forecasting future staff needs</td><td>Safaricom planning for 5G engineers</td></tr>
+          <tr><td>Recruitment & Selection</td><td>Attracting & choosing best talent</td><td>KCB Graduate Management Programme</td></tr>
+          <tr><td>Training & Development</td><td>Improving skills</td><td>Equity Bank Leadership Academy</td></tr>
+          <tr><td>Compensation</td><td>Pay, benefits, rewards</td><td>NHIF, NSSF, pension schemes</td></tr>
+          <tr><td>Employee Relations</td><td>Managing union & conflict</td><td>COTU-K negotiations</td></tr>
+          </table>
+          <div class="first-class"><b>🎯 First Class Answer Structure:</b> Define HRM → List 5 functions → Explain each with example → Criticise: "HRM is not just admin, it is strategic" → Conclude: HRM creates competitive advantage through people.</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz on this Topic →</a>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="card note-item" id="note-ob-motivation" data-subject="OB" data-keywords="maslow herzberg motivation organisational behaviour">
+        <div class="card-header"><h2>2. Organisational Behaviour: Motivation Theories</h2><small>Year 2 • High Exam Weight • OB</small></div>
+        <div class="card-body">
+          <h4>What Examiners Want</h4>
+          <p>Never write one theory alone. Compare <b>two</b> theories and apply to a Kenyan organisation.</p>
+          <div class="theory-box"><b>1. Maslow's Hierarchy of Needs (1943):</b><br>Physiological → Safety → Social → Esteem → Self-Actualisation. <br><i>Limitation:</i> People don't follow the order strictly. A Kenyan boda rider may seek esteem before safety.</div>
+          <div class="theory-box"><b>2. Herzberg Two-Factor Theory (1959):</b><br><b>Hygiene Factors</b> (prevent dissatisfaction): Salary, working conditions, job security.<br><b>Motivators</b> (create satisfaction): Achievement, recognition, responsibility.<br><i>Key point:</i> Increasing salary alone does NOT motivate long-term, it only stops complaints.</div>
+          <div class="theory-box"><b>3. McGregor Theory X & Y:</b><br>Theory X: Workers are lazy, need control. Theory Y: Workers are self-motivated if trusted. Modern HR favours Theory Y.</div>
+          <div class="key-point"><b>Exam Tip - 20 Mark Question:</b> "Discuss motivation theories" = Define motivation + Explain Maslow + Herzberg + Compare + Apply to Safaricom/KCB + Criticise + Recommend what manager should do.</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz →</a>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section class="card note-item" id="note-law" data-subject="Law" data-keywords="employment act 2007 labour law kenya termination">
+        <div class="card-header"><h2>3. Employment Law in Kenya</h2><small>Year 2/3 • Must Know Acts • Law</small></div>
+        <div class="card-body">
+          <h4>Key Laws to Memorise</h4>
+          <ul><li><b>Employment Act, 2007:</b> Main law - contracts, leave, termination, working hours.</li><li><b>Labour Relations Act, 2007:</b> Trade unions, CBA, strikes.</li><li><b>Labour Institutions Act, 2007:</b> Creates National Labour Board.</li><li><b>Occupational Safety & Health Act (OSHA), 2007:</b> Safety at work.</li><li><b>Work Injury Benefits Act (WIBA), 2007:</b> Compensation for injuries.</li></ul>
+          <h4>Critical Exam Facts - Employment Act 2007</h4>
+          <table class="exam-table"><tr><th>Issue</th><th>Law</th></tr><tr><td>Probation</td><td>Max 6 months, can extend 6 months with consent</td></tr><tr><td>Annual Leave</td><td>21 working days with full pay</td></tr><tr><td>Maternity Leave</td><td>3 months (90 days) full pay</td></tr><tr><td>Paternity Leave</td><td>14 days full pay</td></tr><tr><td>Working Hours</td><td>Max 52 hrs/week, 8 hrs/day + overtime</td></tr><tr><td>Termination Notice</td><td>Depends on service: e.g. 28 days if >5 years</td></tr></table>
+          <div class="first-class"><b>🎯 First Class Tip:</b> Always cite Section + Act. e.g. "Under Section 29 of the Employment Act 2007, an employee is entitled to 21 days annual leave." Examiners award marks for citing law.</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz →</a>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="card note-item" id="note-recruitment" data-subject="Recruitment" data-keywords="recruitment selection interview induction">
+        <div class="card-header"><h2>4. Recruitment & Selection</h2><small>Year 2/3 • Practical Unit • Recruitment</small></div>
+        <div class="card-body">
+          <h4>Difference (Common Exam Trap)</h4>
+          <p><b>Recruitment</b> = Attracting many applicants (positive process). <b>Selection</b> = Choosing the best one (negative process - rejecting others).</p>
+          <h4>Recruitment Process - 7 Steps</h4>
+          <ol><li>Job Analysis → Job Description + Job Specification</li><li>Advertising (Internal vs External)</li><li>Shortlisting</li><li>Selection Methods: CV, Interview, Aptitude Test, Assessment Centre</li><li>Reference & Background Checks</li><li>Job Offer & Contract</li><li>Induction / Onboarding</li></ol>
+          <h4>Selection Methods Compared</h4>
+          <table class="exam-table"><tr><th>Method</th><th>Advantage</th><th>Disadvantage</th></tr><tr><td>Structured Interview</td><td>Fair, reliable, comparable</td><td>Time-consuming</td></tr><tr><td>Unstructured Interview</td><td>Flexible</td><td>Biased, unreliable</td></tr><tr><td>Aptitude Test</td><td>Objective</td><td>May not predict job performance</td></tr></table>
+          <div class="key-point"><b>Exam Tip:</b> If asked "Discuss challenges of recruitment in Kenya" mention: Nepotism/tribalism, fake certificates, high unemployment leading to 1000s of applicants, skills mismatch.</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz →</a>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section class="card note-item" id="note-performance" data-subject="Performance" data-keywords="performance appraisal kpi balanced scorecard">
+        <div class="card-header"><h2>5. Performance Management</h2><small>Year 3 • Core for HR Managers • Performance</small></div>
+        <div class="card-body">
+          <h4>Definition</h4>
+          <p>Performance Management is a continuous process of setting goals, monitoring, coaching, appraising and rewarding employees to improve organisational performance. It is NOT just the annual appraisal form.</p>
+          <h4>Methods of Appraisal</h4>
+          <ul><li><b>360-Degree Feedback:</b> Feedback from boss, peers, subordinates, customers.</li><li><b>Management by Objectives (MBO):</b> Manager + employee set SMART goals together.</li><li><b>Balanced Scorecard (Kaplan & Norton):</b> Measures Finance, Customer, Internal Process, Learning & Growth.</li><li><b>Behaviourally Anchored Rating Scale (BARS):</b> Rates specific behaviours.</li></ul>
+          <div class="first-class"><b>🎯 First Class Evaluation:</b> Appraisals often fail due to Halo Effect (one good trait = all good), Recency Effect (only remember last month), Leniency Bias. Recommend training appraisers + continuous feedback.</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz →</a>
+        </div>
+      </section>
+
+      <!-- 6 -->
+      <section class="card note-item" id="note-training" data-subject="Training" data-keywords="training development training needs assessment kirkpatrick">
+        <div class="card-header"><h2>6. Training & Development</h2><small>Year 2/3 • Training Needs • Training</small></div>
+        <div class="card-body">
+          <p><b>Training</b> = Short-term, for current job. <b>Development</b> = Long-term, for future role.</p>
+          <h4>Training Process</h4>
+          <ol><li>Training Needs Assessment (TNA) - Organisational, Task, Person Analysis</li><li>Design Objectives</li><li>Choose Method: On-the-Job (coaching, job rotation) vs Off-the-Job (seminars, e-learning)</li><li>Deliver Training</li><li>Evaluate using <b>Kirkpatrick's 4 Levels</b>: Reaction → Learning → Behaviour → Results</li></ol>
+          <div class="key-point"><b>Exam Tip:</b> In Kenya, mention NITA (National Industrial Training Authority) and Levy - employers pay training levy to fund training.</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz →</a>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <section class="card note-item" id="note-compensation" data-subject="Compensation" data-keywords="compensation salary benefits reward equity">
+        <div class="card-header"><h2>7. Compensation & Reward Management</h2><small>Year 3/4 • Highly Testable • Compensation</small></div>
+        <div class="card-body">
+          <h4>Components of Total Reward</h4>
+          <ul><li><b>Direct:</b> Basic salary, overtime, bonuses, commission</li><li><b>Indirect:</b> NSSF, NHIF/SHA, pension, medical cover, housing allowance, company car</li><li><b>Non-Financial:</b> Recognition, flexible hours, career growth</li></ul>
+          <h4>Key Theories</h4>
+          <p><b>Equity Theory (Adams):</b> Employees compare their input/output ratio to others. If unfair, they reduce effort or quit. This explains why salary secrecy fails in Kenyan firms.</p>
+          <p><b>Expectancy Theory (Vroom):</b> Motivation = Expectancy x Instrumentality x Valence. Employee must believe effort leads to performance, performance leads to reward, and reward is valued.</p>
+          <div class="first-class"><b>🎯 First Class Point:</b> Link pay to Kenya's minimum wage orders + Salaries and Remuneration Commission (SRC) for public sector. Shows current awareness.</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz →</a>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section class="card note-item" id="note-strategic" data-subject="Strategic" data-keywords="strategic hrm shrm hr analytics swot">
+        <div class="card-header"><h2>8. Strategic HRM & HR Analytics</h2><small>Year 4 • Final Year / Project • Strategic</small></div>
+        <div class="card-body">
+          <h4>What is Strategic HRM?</h4>
+          <p>Aligning HR policies with business strategy to gain competitive advantage. HR sits at board level, not just admin.</p>
+          <h4>Models</h4>
+          <ul><li><b>Best Practice / Universalist:</b> Certain HR practices always work (e.g. training, selective hiring) - Pfeffer.</li><li><b>Best Fit / Contingency:</b> HR must fit strategy. Cost-leadership firm needs different HR than differentiation firm.</li><li><b>Resource-Based View (Barney):</b> People are VRIN - Valuable, Rare, Inimitable, Non-substitutable. This is why talent is competitive advantage.</li></ul>
+          <h4>HR Analytics - Modern Exam Favourite</h4>
+          <p>Using data to make HR decisions: Turnover rate, Absenteeism rate, Cost per hire, Training ROI, Time to fill. Example: If turnover in a Nairobi bank is 25%, HR Analytics shows it's due to low pay vs competitors, not "lazy staff".</p>
+          <div class="first-class"><b>🎯 First Class Conclusion Template:</b> "In conclusion, modern HR has shifted from personnel administration to strategic partner. Organisations that invest in people, use data, and comply with Kenyan labour law will outperform competitors."</div>
+          <a href="take-quiz.html" class="btn btn-primary no-print">Take Quiz →</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer style="text-align:center; padding:20px;">
+    <p>Student Learning and Revision Platform • Notes by Stephen Githaiga Muriu • HR Degree</p>
+    <a href="index.html" class="btn btn-secondary no-print">← Back to Home</a>
+  </footer>
+</div>
+
+<script>
+  function filterNotes() {
+    const search = document.getElementById('notesSearch').value.toLowerCase();
+    const subject = document.getElementById('subjectFilter').value;
+    document.querySelectorAll('.note-item').forEach(note => {
+      const matchSubject = subject === 'All' || note.dataset.subject === subject;
+      const matchSearch = note.textContent.toLowerCase().includes(search);
+      note.style.display = (matchSubject && matchSearch) ? 'block' : 'none';
+    });
+  }
+</script>
+</body>
+</html>
